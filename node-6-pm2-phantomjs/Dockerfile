@@ -8,5 +8,8 @@ EXPOSE 8000 8001 8002
 
 WORKDIR /app
 
+RUN npm install /app/v1 && npm install /app/v2
+
+
 # Start process.yml
 CMD ["pm2-docker", "start", "--auto-exit", "--env", "production", "process.yml"]
