@@ -3,6 +3,7 @@ MAINTAINER jozzhart <me@jozzhart.comk>
 
 RUN npm install pm2 -g
 RUN npm install phantomjs@1.9.20 -g
+RUN npm install yarn -g
 
 EXPOSE 8000 8001 8002
 
